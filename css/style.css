@@ -116,7 +116,9 @@ header img{
     width: 243px;
     top: 192px;   
 }
-
+#pinkleft li {
+    list-style-type: none;
+}
 #pinkRight{
     position: absolute;
     top: 192px;
@@ -127,10 +129,10 @@ header img{
 }
 
 .Layout2{
-    position: absolute;
+    position: relative;
     height: 2000px;
     width: 1400px;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
 .Layout2 footer{
@@ -194,6 +196,7 @@ header img{
 .Layout2 li{
     height: 135px;
     text-align: left;
+    list-style-type: none;
 }
 
 .Layout2 li a{
@@ -201,6 +204,7 @@ header img{
     margin-top: 59px;
     left:  5px;
     color: #000000;
+    list-style-type: none;
 }
 
 
