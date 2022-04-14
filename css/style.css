@@ -227,8 +227,9 @@
   
   .Layout3 {
     position: relative;
-    width: 1000px;
-    height: 1121px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
     margin: 0px auto;
   }
   /* logo+nav+plus */
@@ -237,7 +238,8 @@
   }
   
   #navAndPlus {
-    height: 500px width 500px;
+    height: 500px;
+    width: 500px;
   }
   #navAndPlus span {
     color: #ffffff;
@@ -271,7 +273,7 @@
   .Layout3 li a {
     position: relative;
     margin-top: 27px;
-    width: 166px;
+    width: 166.5px;
     height: 58px;
     display: inline-block;
     border: none;
@@ -292,13 +294,12 @@
   #four_boxes {
     position: absolute;
     display: grid;
-  
+    left: 500px;
     top: 0px;
     right: 0px;
     grid-template-columns: repeat(2, 250px);
     grid-template-rows: repeat(2, 250px);
     grid-gap: 0px;
-    grid-auto-rows: 500px;
   }
   
   #lowerLeft1 {
@@ -320,27 +321,63 @@
   
   /* footer + blue area */
   .Layout3 #blueArea {
-    position: absolute;
-    background-color: #517a8d;
-    display: flex;
-    flex-wrap: wrap;
-    top: 500px;
-    height: 500px;
-    width: 1000px;
+      display: inline-grid;
+      grid-template-columns: repeat(4, 250px);
+      /* grid-auto-rows: 250px; */
+      grid-gap: 0px;
+
+  }
+
+  #lowerLeft1:hover {
+    background-color: black;
+    }
+
+  #upperRight1:hover {
+    background-color: black;
+    }
+
+  #upperLeft1:hover {
+    background-color: black;
+    }
+
+  #lowerRight1:hover {
+    background-color: black;
+    }
+
+.squares:hover{
+  background-color: black;
   }
   
-  #blueArea :hover{
-    background-color: black;
 
+
+  
+
+  @media screen and (max-width: 600px) {
+
+    #four_boxes {
+      background-color: red;
+      display: none;
+    }
+
+    #blueArea {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr) !important;
+      grid-template-rows: repeat(2, 250px);
+    }
   }
+    
+
+    
 
   .Layout3 footer {
-    position: absolute;
-    top: 1000px;
+
     background-color: #d6d6d6;
     height: 121px;
-    width: 1000px;
+    width: 100%;
   }
 
+ 
 
+ 
+  
 
