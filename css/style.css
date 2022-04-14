@@ -300,16 +300,9 @@
     grid-template-columns: repeat(2, 250px);
     grid-template-rows: repeat(2, 250px);
     grid-gap: 0px;
+
   }
-  
-  #lowerLeft1 {
-    background-color: #fff;
-    opacity: 75%;
-  }
-  #upperRight1 {
-    background-color: #fff;
-    opacity: 50%;
-  }
+
   #lowerRight1 {
     background-color: #fff;
     opacity: 25%;
@@ -365,10 +358,7 @@
       grid-template-rows: repeat(2, 250px);
     }
   }
-    
-
-    
-
+  
   .Layout3 footer {
 
     background-color: #d6d6d6;
