@@ -54,7 +54,15 @@ for (let j = 0; j < 10; j++)
 
     const squareId = `${i}-${j}`;
     square.addEventListener("click", () => handleColor(squareId));
+    square.addEventListener("mouseover", function (event) {
+      let currentOpacity = event.target.style.opacity;
 
+      event.target.style.opacity = "50%";
+
+      setTimeout(function () {
+        event.target.style.opacity = currentOpacity;
+      }, 200);
+    });
     // square.onclick(handleColor(squareId))
     square.id = squareId;
     if (i == 0 || i == 2) square.style.opacity = "100%";
